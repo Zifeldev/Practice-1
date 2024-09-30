@@ -24,7 +24,7 @@
                     <a class="nav-item" href="music.html">MUSIC</a>
                     <a class="nav-item" href="book.html">BOOK</a>
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">WORK</button>
+                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="math.html">MATH</a>
                           <a href="form.html">FORM</a>
@@ -49,20 +49,37 @@
                     </div>
                 </div>
             </div>
-
-        </div> 
-        
-        <div class="main">
+            <main class="form">
+                <form> 
+                    <fieldset> 
+                        <legend>Personal information</legend> 
+                        <label for="name">Name </label> 
+                        <input id="name" name="new_name" placeholder="Name" type="text" required/> 
+                        <label for="surname">Surname </label> 
+                        <input id="surname" name="new_surname" placeholder="Surname" type="text" required/> 
+                        <input id="age" name="new_age" placeholder="18" type="number" required/> 
+                        <label for="adress">Address </label> 
+                        <input id="adress" name="new_adress" type="text"/> 
+                        <label for="phone">Phone number </label> 
+                        <input id="phone" name="new_phone" type="tel"/>
+                        <label for="email">Email </label> 
+                        <input id="email" name="new_email" type="email"/>
+                    </fieldset>    
             
-            <div class="info">My name is Azat Buranbayev, I'm 19 y.o and I'm very lazy for doing an essay about my self, so I think it's enough :D
+                    <fieldset> 
+                        <legend>Educational information</legend> 
+                        <label for="faculty">Faculty </label> 
+                        <input id="faculty" name="new_faculty" type="text"/> 
+                        <label for="group">Group </label> 
+                        <input id="grouop" name="new_group" type="text" required/>
+                        <label for="order">Date of enrollment order </label> 
+                        <input id="order" name="new_order" type="date"/> 
+                    </fieldset>
+                    <button type="submit">Submit</button> 
+                </form>
+            </main>
             
-            </div>
-        
         </div>
-        <div class="footer">
-            <a href="https://www.instagram.com/azat.buranbayev/">
-                <img src="src/public/free-icon-instagram-15713420.png" width=30 height=30 alt="">
-            </a>
         </div>
         
     </div>
